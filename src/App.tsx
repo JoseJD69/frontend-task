@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {HomePage} from "./pages/HomePage";
 import {CommitsPage} from "./pages/CommitsPage";
 import {LayoutComponent} from "./components/Layout";
+import {NotFoundPage} from "./pages/NotFoundPage";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
                     <Route index element={<CommitsPage/>}/>
                     <Route path=":repository" element={<CommitsPage/>}/>
                 </Route>
-                <Route path="*" element={<h1>Not Found</h1>}/>
+                <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
 
         </BrowserRouter>
