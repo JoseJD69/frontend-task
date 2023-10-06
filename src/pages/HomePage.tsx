@@ -27,6 +27,7 @@ export const HomePage: FC = () => {
     }, [])
     return (
         <div className="container mx-auto">
+            <h1 className="font-medium text-2xl py-5">Repositories</h1>
             <div className="grid grid-cols-3 gap-4">
                 {
                     state.repositories.length > 0 && state.repositories.map((item: any, index) => {
