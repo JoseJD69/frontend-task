@@ -17,14 +17,14 @@ export const HomePage: FC = () => {
             searchRepositories(response)
             getCommitByRepository([])
         })
-    }, [searchRepositories, getCommitByRepository])
+    }, [state])
     const handleGetCommits = (repo: string) => {
         navigate(`/commits/${repo}`)
     }
 
     useEffect(() => {
         handleSearch()
-    }, [handleSearch])
+    }, [])
     return (
         <div className="container mx-auto">
             <div className="grid grid-cols-3 gap-4">
