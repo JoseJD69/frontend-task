@@ -14,6 +14,7 @@ function App() {
                     <Route index element={<CommitsPage/>}/>
                     <Route path=":repository" element={<CommitsPage/>}/>
                 </Route>
+                <Route path="*" element={<h1>Not Found</h1>}/>
             </Routes>
 
         </BrowserRouter>
